@@ -15,6 +15,7 @@ def read_data(fname):
     content = [x.strip() for x in content]  # remove start and end spaces in each line
     content = [list(i) for i in content]    # spliting into chrs
     content = np.hstack(content)            # flatteing the array to 1d
+    print("CONTENT: ",content) 
     return content
 
 
